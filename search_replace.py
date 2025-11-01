@@ -1,3 +1,8 @@
 text = input("请输入一段文本：")
 search_word = input("请输入要查找的单词：")
-replace_word = 
+replace_word = input("请输入用于替换的新单词：")
+count = text.count(search_word)
+print(f"'{search_word}'在文本中出现了{count}次。")
+updated_text = text.replace(search_word,replace_word)
+print("替换后的文本：")
+print(updated_text)
